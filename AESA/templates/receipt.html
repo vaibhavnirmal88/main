@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/receipt.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <title>AESA Receipt</title>
+</head>
+<body class="mx-auto d-block body">
+    <div class="receipt-container mx-auto d-block rounded" >
+        <img src="/static/aesa_logo.png" class="logo ms-4 mt-4">
+        <div class="receipt-header h2 AESA mt-3 ">AUTOMATION & ROBOTICS ENGINEERING <br>STUDENT ASSOCIATION (AESA)<br>{{years}}{{receiptdata.years}}</div>
+        <div class="receipt-details">
+            <div class="in-b ms-4 text-start mt-1 fl">Receipt Number: <span  class="f500" id="receipt-number">{{receipt_number}}{{receiptdata.receipt_number}}</span></div>
+            <div class="text-end date in-b mt-1 fl ">Date: <span class="f500"id="date">{{date}}{{receiptdata.date}}</span></div>
+            <div class="mt-1 ms-4 fl">Name: <span id="payee-name" class="f500">{{prefix}}{{name}}{{receiptdata.Name}}</span></div>
+            <div class="mt-1 ms-4 in-b fl">Email ID: <span id="email-id" class="f500">{{email}}{{receiptdata.email}}</span></div>
+            <div class="mt-1 in-b cn fl ">Mobile No: <span id="mobile-no" class="f500">{{mobile_number}}{{receiptdata.mobile_number}}</span></div>
+            <div class="mt-1 ms-4 fl in-b">Amount: ₹<span id="amount" class="f500">{{amount}}{{receiptdata.amount}}</span></div>
+            <img src="/static/my_sign.png" class="sign1">
+        </div>
+        <div class="signature-container bold me-5">
+            
+            <div>Signature of Treasurer</div>
+        </div>
+    </div>
+</body>
+</html>

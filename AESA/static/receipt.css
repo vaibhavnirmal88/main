@@ -1,0 +1,91 @@
+.body {
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bold{
+    font-weight:bold;
+}
+.AESA{
+    font-size: large;
+    font-weight: bold;
+}
+.in-b{
+    display: inline-block;
+}
+.date{
+    margin-left: 6cm;
+}
+.cn{
+    margin-left: 5cm;
+}
+.fl{
+    font-weight:lighter;
+}
+.f500{
+    font-weight:500;
+}
+.margin{
+    text-align: center; 
+}
+
+.receipt-container {
+    width: 22cm;
+    height: 11cm;
+    border: 3px solid #302525;
+    position: relative;
+    margin-top: 5.5cm ;
+    margin-bottom: 5.5cm;
+    background-color:antiquewhite;
+}
+.receipt-container::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: url("bg_logo.png");
+    opacity:0.3;
+    background-size: 18cm 18cm ;
+    background-position-x: center;
+    background-position-y: -0.5cm; 
+}
+
+.logo {
+    position: absolute;
+    width: 3cm; 
+    height: 3cm;
+}
+
+.receipt-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.receipt-details {
+    margin: 20px;
+}
+
+.receipt-details div {
+    margin-bottom: 10px;
+}
+
+.signature-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sign1{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-left: 9.5cm;
+}
+.sign2{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-left: 9.4cm;
+}
